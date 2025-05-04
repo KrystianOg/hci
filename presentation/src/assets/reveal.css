@@ -1,0 +1,131 @@
+/* Slides.css
+ * Clean look theme: white background, dark text, subtle blue accents.
+ * Smooth transitions for fragments and slide backgrounds.
+ */
+
+:root {
+  /* Color palette */
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007acc;
+  --link-color: #005f99;
+
+  /* Transition settings */
+  --transition-duration: 0.5s;
+  --transition-ease: ease-in-out;
+}
+
+/* Base slide styling */
+.reveal {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5em;
+}
+
+.reveal p,
+.reveal ul,
+.reveal ol {
+  margin: 1em 0;
+  line-height: 1.4;
+}
+
+/* Link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-color);
+  transition: color var(--transition-duration) var(--transition-ease),
+    border-bottom-color var(--transition-duration) var(--transition-ease);
+}
+a:hover {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Fragment animations */
+.fragment {
+  opacity: 0;
+  transition: opacity var(--transition-duration) var(--transition-ease);
+}
+.fragment.visible {
+  opacity: 1;
+}
+
+/* Custom animation classes */
+.fade-in {
+  animation: fadeIn var(--transition-duration) var(--transition-ease) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideIn var(--transition-duration) var(--transition-ease) forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Section background transitions */
+.reveal .slides section {
+  transition: background-color var(--transition-duration) var(--transition-ease);
+}
+.reveal .slides section[data-background-color] {
+  /* Leave custom background-color if defined in markup */
+}
+
+/* Notes styling */
+.reveal aside.notes {
+  font-size: 0.9em;
+  color: rgba(50, 50, 50, 0.75);
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+/* Survey placeholders styling */
+.survey-placeholder {
+  padding: 1em;
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  font-style: italic;
+  color: #666666;
+  margin: 1em 0;
+}
+
+/* ControlPanel button override */
+aside.notes button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-ease);
+}
+aside.notes button:hover {
+  background-color: #005f99;
+}

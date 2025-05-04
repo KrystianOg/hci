@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import Reveal from "./components/Reveal.vue";
+import Presentation from "./components/Presentation.vue";
 </script>
 
 <template>
   <Reveal>
-    <section>Section 1</section>
-    <section>Section 2</section>
-    <section>Section 3</section>
-    <section>Section 4</section>
+    <Presentation />
   </Reveal>
 </template>

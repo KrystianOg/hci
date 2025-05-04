@@ -89,12 +89,13 @@ a:hover {
   }
 }
 
+.reveal .slides {
+  padding: 2rem 0;
+}
+
 /* Section background transitions */
 .reveal .slides section {
   transition: background-color var(--transition-duration) var(--transition-ease);
-}
-.reveal .slides section[data-background-color] {
-  /* Leave custom background-color if defined in markup */
 }
 
 /* Notes styling */
@@ -119,7 +120,7 @@ a:hover {
 /* ControlPanel button override */
 aside.notes button {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--bg-color);
   border: none;
   padding: 0.5em 1em;
   border-radius: 4px;
@@ -127,5 +128,5 @@ aside.notes button {
   transition: background-color var(--transition-duration) var(--transition-ease);
 }
 aside.notes button:hover {
-  background-color: #005f99;
+  background-color: var(--link-color);
 }

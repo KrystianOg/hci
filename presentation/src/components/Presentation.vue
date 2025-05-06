@@ -8,8 +8,8 @@
     data-background-image="path/to/your/image.jpg"
     data-notes="Witam Państwa. Dzisiejsza prezentacja poświęcona jest środowiskom interaktywnym – systemom reagującym na działania użytkownika w czasie rzeczywistym, wykorzystywanym w najróżniejszych zastosowaniach od desktopowych GUI po interfejsy mózg–komputer (BCI)."
   >
-    <h1>Środowiska interaktywne – pogłębiona analiza</h1>
-    <p>Twoje imię i data</p>
+    <h1>Środowiska interaktywne</h1>
+    <p>Krystian Ogonowski, Illia Martusenko</p>
   </section>
 
   <!-- Slajd 2: Agenda -->
@@ -315,44 +315,51 @@
 </template>
 
 <style scoped>
-/* Add some basic styling for fragments */
-.fragment {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease;
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.fragment.visible {
-  opacity: 1;
-  visibility: visible;
+section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Style for headings */
-h1,
-h2,
-h3 {
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+h1, h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Style for lists */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  margin: 1em 0;
-  padding: 0.5em;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  backdrop-filter: blur(5px);
-}
-
-/* Style for paragraphs */
 p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin: 1em 0;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
+
+ul {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 </style>

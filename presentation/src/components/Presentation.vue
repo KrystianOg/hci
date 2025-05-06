@@ -3,409 +3,314 @@
 </script>
 
 <template>
-  <!-- Sekcja 1: Wprowadzenie i entry survey (10 min) -->
+  <!-- Slajd 1: Tytuł prezentacji -->
   <section
-    data-background-gradient="linear-gradient(to bottom right, #002147, #000000)"
-    data-notes="Wprowadzenie do tematu prezentacji. Powitanie uczestników."
+    data-background-image="path/to/your/image.jpg"
+    data-notes="Witam Państwa. Dzisiejsza prezentacja poświęcona jest środowiskom interaktywnym – systemom reagującym na działania użytkownika w czasie rzeczywistym, wykorzystywanym w najróżniejszych zastosowaniach od desktopowych GUI po interfejsy mózg–komputer (BCI)."
   >
-    <h1 class="fragment fade-up">Środowiska Interaktywne</h1>
-    <h3 class="fragment fade-up">Wprowadzenie</h3>
-    <p class="fragment fade-up">
-      Dzień dobry! Witam wszystkich na prezentacji o środowiskach
-      interaktywnych.
-    </p>
-    <p class="fragment fade-up">
-      Przez najbliższe 60–70 minut przejdziemy przez siedem kluczowych tematów.
-    </p>
+    <h1>Środowiska interaktywne – pogłębiona analiza</h1>
+    <p>Twoje imię i data</p>
   </section>
 
+  <!-- Slajd 2: Agenda -->
   <section
-    data-background-image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Zadanie pytania o środowisko interaktywne."
+    data-notes="Omówię: 1) definicję i cechy środowisk interaktywnych, 2) ich ewolucję, 3) szczegółową klasyfikację, 4) technologie, 5) wyzwania projektowe, 6) przykłady zastosowań, 7) kierunki rozwoju przyszłości."
   >
-    <h2 class="fragment">Entry Survey</h2>
-    <p class="fragment fade-up">
-      Które środowisko interaktywne wykorzystujesz najczęściej?
-    </p>
-    <!-- TODO: Add interactive survey component -->
-  </section>
-
-  <!-- Sekcja 2: Wprowadzenie i definicje (12 min) -->
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #1a237e, #000000)"
-    data-notes="Wprowadzenie do definicji HCI."
-  >
-    <h2 class="fragment">Wprowadzenie</h2>
-    <p class="fragment fade-up">Zacznijmy od pojęć...</p>
+    <h2>Plan wystąpienia</h2>
     <ul>
-      <li class="fragment fade-up">
-        Cel: zrozumienie pojęcia środowiska interaktywnego
-      </li>
-      <li class="fragment fade-up">
-        Definicja HCI i rola relacji człowiek–komputer
-      </li>
+      <li>Definicja i cechy środowisk interaktywnych</li>
+      <li>Ewolucja</li>
+      <li>Szczegółowa klasyfikacja</li>
+      <li>Technologie</li>
+      <li>Wyzwania projektowe</li>
+      <li>Przykłady zastosowań</li>
+      <li>Kierunki rozwoju przyszłości</li>
     </ul>
   </section>
 
+  <!-- Slajd 3: Definicja środowisk interaktywnych -->
   <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Zadanie pytania o definicje środowiska interaktywnego."
+    data-notes="Środowisko interaktywne to każda platforma lub system umożliwiający dwukierunkową wymianę informacji między użytkownikiem a komputerem, gdzie reakcja systemu następuje w czasie rzeczywistym."
   >
-    <h2 class="fragment">Definicje</h2>
-    <p class="fragment fade-up">
-      Co najbardziej definiuje środowisko interaktywne?
-    </p>
-    <!-- TODO: Add quiz component -->
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #1a237e, #000000)"
-    data-notes="Omówienie kontekstu HCI."
-  >
-    <h2 class="fragment">Kontekst HCI</h2>
-    <ul>
-      <li class="fragment fade-up">Znaczenie HCI w projektowaniu</li>
-      <li class="fragment fade-up">
-        Środowiska interaktywne jako narzędzie HCI
-      </li>
-      <li class="fragment fade-up">Krótka ewolucja GUI (desktop)</li>
-    </ul>
-  </section>
-
-  <!-- Sekcja 3: Klasyfikacja środowisk (19:00–35:00) -->
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #004d40, #000000)"
-    data-notes="Wprowadzenie do klasyfikacji środowisk."
-  >
-    <h2 class="fragment">Klasyfikacja środowisk</h2>
-    <ul>
-      <li class="fragment fade-up">Graficzne interfejsy użytkownika (GUI)</li>
-      <li class="fragment fade-up">Wirtualna rzeczywistość (VR)</li>
-      <li class="fragment fade-up">Rozszerzona rzeczywistość (AR)</li>
-      <li class="fragment fade-up">Mieszana rzeczywistość (MR)</li>
-      <li class="fragment fade-up">Interfejsy dotykowe i haptyczne</li>
-      <li class="fragment fade-up">Interfejsy głosowe</li>
-      <li class="fragment fade-up">Interfejsy gestów</li>
-      <li class="fragment fade-up">Interfejsy wielomodalne</li>
-      <li class="fragment fade-up">Interfejsy neuronowe (BCI)</li>
-    </ul>
-  </section>
-
-  <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Zadanie pytania o skojarzenia z różnymi środowiskami."
-  >
-    <h2 class="fragment">Word Cloud</h2>
-    <p class="fragment fade-up">
-      Kreatywna przerwa: wpiszcie jedno słowo, które od razu kojarzy Wam się z:
-    </p>
-    <ul>
-      <li class="fragment fade-up">Desktop</li>
-      <li class="fragment fade-up">Web</li>
-      <li class="fragment fade-up">Mobile</li>
-    </ul>
-    <!-- TODO: Add word cloud component -->
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #004d40, #000000)"
-    data-notes="Omówienie środowisk desktopowych."
-  >
-    <h2 class="fragment">Desktopowe</h2>
-    <ul>
-      <li class="fragment fade-up">GUI oparte na oknach, menu, ikonach</li>
-      <li class="fragment fade-up">Wejście klawiatura + myszka</li>
-      <li class="fragment fade-up">
-        Wyzwania: responsywność, dostępność, wielozadaniowość
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Omówienie środowisk webowych."
-  >
-    <h2 class="fragment">Webowe</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Działają w przeglądarce – dowolny system operacyjny
-      </li>
-      <li class="fragment fade-up">Wysoka dostępność i łatwość dystrybucji</li>
-      <li class="fragment fade-up">
-        Mechanizmy: AJAX, Single-Page Applications w JS
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #004d40, #000000)"
-    data-notes="Omówienie środowisk mobilnych."
-  >
-    <h2 class="fragment">Mobilne</h2>
-    <ul>
-      <li class="fragment fade-up">Ekran dotykowy, gesty, wibracje</li>
-      <li class="fragment fade-up">
-        Małe ekrany → potrzeba uproszczonych interfejsów
-      </li>
-      <li class="fragment fade-up">
-        Czujniki: GPS, akcelerometr – pozwalają na kontekstowe usługi
-      </li>
-    </ul>
-  </section>
-
-  <!-- Sekcja 4: Ubioralne i ambientowe (35:00–42:00) -->
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #880e4f, #000000)"
-    data-notes="Wprowadzenie do środowisk ubioralnych i ambientowych."
-  >
-    <h2 class="fragment">Ubioralne i ambientowe</h2>
-    <p class="fragment fade-up">
-      Przechodzimy teraz do środowisk ubioralnych i ambientowych – tam, gdzie
-      technologia wnika jeszcze głębiej w nasze codzienne otoczenie.
+    <h2>Co to są środowiska interaktywne?</h2>
+    <p>
+      Środowisko interaktywne to każda platforma lub system umożliwiający
+      dwukierunkową wymianę informacji między użytkownikiem a komputerem, gdzie
+      reakcja systemu następuje w czasie rzeczywistym.
     </p>
   </section>
 
+  <!-- Slajd 4: Kluczowe cechy -->
   <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Omówienie Ambient Intelligence."
+    data-notes="Główne cechy to: szybkość reakcji (low latency), adaptacyjność do kontekstu użytkownika, multimodalność wejścia/wyjścia oraz sprzężenie zwrotne – wizualne, dźwiękowe, haptyczne czy nawet neuronalne."
   >
-    <h2 class="fragment">Ambient Intelligence</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Inteligentne otoczenie reagujące na obecność użytkownika
-      </li>
-      <li class="fragment fade-up">
-        Systemy wykorzystują czujniki, by dostosować oświetlenie, dźwięk czy
-        temperaturę
-      </li>
-      <li class="fragment fade-up">
-        Celem jest dyskretna, niemal niewidoczna interakcja
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #880e4f, #000000)"
-    data-notes="Omówienie kluczowych technologii."
-  >
-    <h2 class="fragment">Kluczowe technologie</h2>
-    <ul>
-      <li class="fragment fade-up">IoT – urządzenia połączone w sieć</li>
-      <li class="fragment fade-up">
-        Czujniki kontekstowe – ruchu, otoczenia, biometria
-      </li>
-      <li class="fragment fade-up">
-        AI i uczenie maszynowe – analiza danych w czasie rzeczywistym
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Omówienie wearables."
-  >
-    <h2 class="fragment">Wearables</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Smartwatche, opaski fitness, inteligentne ubrania
-      </li>
-      <li class="fragment fade-up">
-        Przykład: monitorowanie tętna i adaptacja treningu
-      </li>
-      <li class="fragment fade-up">
-        Wyzwanie: responsywność i integracja z pozostałymi systemami
-      </li>
-    </ul>
-  </section>
-
-  <!-- Sekcja 5: Środowiska współdzielone i kooperacyjne (42:00–50:00) -->
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #bf360c, #000000)"
-    data-notes="Wprowadzenie do środowisk współdzielonych."
-  >
-    <h2 class="fragment">Środowiska współdzielone i kooperacyjne</h2>
-    <p class="fragment fade-up">
-      Przejdźmy do środowisk współdzielonych – to przestrzenie, w których
-      pracujemy razem, niezależnie od lokalizacji.
+    <h2>Charakterystyka</h2>
+    <p>
+      Główne cechy to: szybkość reakcji (low latency), adaptacyjność do
+      kontekstu użytkownika, multimodalność wejścia/wyjścia oraz sprzężenie
+      zwrotne – wizualne, dźwiękowe, haptyczne czy nawet neuronalne.
     </p>
   </section>
 
+  <!-- Slajd 5: Historia i ewolucja -->
   <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Omówienie synchroniczności i asynchroniczności."
+    data-notes="Początki sięgają terminali tekstowych lat 60. i 70., przez graficzne pulpity (GUI) lat 80., aż do dziś, gdy mówimy o VR, AR i interakcjach neuronalnych – każde nowe medium rozszerza zakres możliwości interakcji."
   >
-    <h2 class="fragment">Synchroniczność vs asynchroniczność</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Synchroniczna – wszyscy działamy w tym samym czasie (wideokonferencje,
-        edycja live)
-      </li>
-      <li class="fragment fade-up">
-        Asynchroniczna – dokumenty czy zadania, na które wracamy w różnym czasie
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #bf360c, #000000)"
-    data-notes="Omówienie przykładów narzędzi."
-  >
-    <h2 class="fragment">Przykłady narzędzi</h2>
-    <ul>
-      <li class="fragment fade-up">Dokumenty Google – wspólna edycja tekstu</li>
-      <li class="fragment fade-up">
-        Tablice online (Miro, FigJam) – burza mózgów na wspólnym canvasie
-      </li>
-      <li class="fragment fade-up">
-        CVE – Collaborative Virtual Environments, np. przestrzenie VR do spotkań
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Zadanie pytania do publiczności."
-  >
-    <h2 class="fragment">Pytanie do publiczności</h2>
-    <p class="fragment fade-up">
-      Z jakich narzędzi współpracy korzystacie na co dzień?
-    </p>
-    <!-- TODO: Add interactive component -->
-  </section>
-
-  <!-- Sekcja 6: Zasady projektowania interaktywnych środowisk (50:00–56:00) -->
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #1b5e20, #000000)"
-    data-notes="Wprowadzenie do zasad projektowania."
-  >
-    <h2 class="fragment">Zasady projektowania interaktywnych środowisk</h2>
-    <p class="fragment fade-up">
-      Przejdźmy do zasad projektowania, które stoją za każdą udaną interakcją.
+    <h2>Od tekstu do immersji</h2>
+    <p>
+      Początki sięgają terminali tekstowych lat 60. i 70., przez graficzne
+      pulpity (GUI) lat 80., aż do dziś, gdy mówimy o VR, AR i interakcjach
+      neuronalnych – każde nowe medium rozszerza zakres możliwości interakcji.
     </p>
   </section>
 
+  <!-- Slajd 6: GUI -->
   <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Omówienie zasad ISO 9241-110."
+    data-notes="GUI to pionier środowisk interaktywnych, gdzie użytkownik reaguje na ikony, menu i przyciski za pomocą myszy lub dotyku – przykład: Windows, macOS, aplikacje webowe."
   >
-    <h2 class="fragment">ISO 9241-110: zasady dialogu</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Klarowność – interfejs mówi wprost, co robi i co można zrobić dalej
-      </li>
-      <li class="fragment fade-up">
-        Przewidywalność – użytkownik wie, jak system zareaguje na jego działania
-      </li>
-      <li class="fragment fade-up">
-        Możliwość odzyskiwania – łatwe cofanie błędów i anulowanie akcji
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #1b5e20, #000000)"
-    data-notes="Omówienie adaptacyjności i personalizacji."
-  >
-    <h2 class="fragment">Adaptacyjność i personalizacja</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Zmiana układu interfejsu w zależności od zadania
-      </li>
-      <li class="fragment fade-up">
-        Rekomendacje, profile użytkowników, automatyczne tryby
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Zadanie pytania do publiczności."
-  >
-    <h2 class="fragment">Dyskusja</h2>
-    <p class="fragment fade-up">
-      Która z tych zasad wydaje się Wam najtrudniejsza do wdrożenia i dlaczego?
-    </p>
-    <!-- TODO: Add interactive component -->
-  </section>
-
-  <!-- Sekcja 7: Podsumowanie i Exit Survey (56:00–65:00) -->
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #4a148c, #000000)"
-    data-notes="Podsumowanie prezentacji."
-  >
-    <h2 class="fragment">Podsumowanie</h2>
-    <p class="fragment fade-up">
-      Przypomnijmy: omówiliśmy siedem sekcji od definicji, przez klasyfikację,
-      aż po zasady projektowania.
+    <h2>Graficzne interfejsy użytkownika</h2>
+    <p>
+      GUI to pionier środowisk interaktywnych, gdzie użytkownik reaguje na
+      ikony, menu i przyciski za pomocą myszy lub dotyku – przykład: Windows,
+      macOS, aplikacje webowe.
     </p>
   </section>
 
+  <!-- Slajd 7: Interfejsy dotykowe i haptyczne -->
   <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Omówienie kluczowych wniosków."
+    data-notes="Dotyk pozwala na bezpośrednią manipulację obiektami na ekranie. Haptyka (wibracje, siła oporu) dostarcza fizyczne sprzężenie zwrotne – kluczowe w smartfonach, tabletach i kontrolerach VR."
   >
-    <h2 class="fragment">Kluczowe wnioski</h2>
-    <ul>
-      <li class="fragment fade-up">
-        Każde środowisko ma unikalne wyzwania i technologie
-      </li>
-      <li class="fragment fade-up">
-        Projektowanie musi uwzględniać kontekst i użytkownika
-      </li>
-      <li class="fragment fade-up">
-        Interaktywność to proces ciągły, a nie jednorazowy wysiłek
-      </li>
-    </ul>
-  </section>
-
-  <section
-    data-background-gradient="linear-gradient(to bottom right, #4a148c, #000000)"
-    data-notes="Zadanie pytania o exit survey."
-  >
-    <h2 class="fragment">Exit Survey</h2>
-    <p class="fragment fade-up">
-      Które środowisko teraz wygląda dla Was najciekawiej?
-    </p>
-    <!-- TODO: Add interactive survey component -->
-  </section>
-
-  <section
-    data-background-image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80"
-    data-background-opacity="0.2"
-    data-notes="Zakończenie prezentacji."
-  >
-    <h2 class="fragment">Pytania i zamknięcie</h2>
-    <p class="fragment fade-up">
-      Dziękuję za uwagę! Teraz czas na Wasze pytania i dyskusję.
-    </p>
-    <p class="fragment fade-up">
-      Co Was najbardziej zainteresowało lub zaskoczyło?
+    <h2>Dotyk fizyczny</h2>
+    <p>
+      Dotyk pozwala na bezpośrednią manipulację obiektami na ekranie. Haptyka
+      (wibracje, siła oporu) dostarcza fizyczne sprzężenie zwrotne – kluczowe w
+      smartfonach, tabletach i kontrolerach VR.
     </p>
   </section>
 
+  <!-- Slajd 8: Interfejsy głosowe -->
   <section
-    data-visibility="uncounted"
-    data-background-gradient="linear-gradient(to bottom right, #263238, #000000)"
-    data-notes="Bibliografia do prezentacji."
+    data-notes="Rozpoznawanie mowy i synteza głosu pozwalają na sterowanie i dialog z systemem bez użycia rąk – przykłady: Siri, Alexa, Asystent Google."
   >
-    <h2 class="fragment">Bibliografia</h2>
-    <ul>
-      <li class="fragment fade-up"></li>
-      <li class="fragment fade-up"></li>
-      <li class="fragment fade-up"></li>
-      <li class="fragment fade-up"></li>
-    </ul>
+    <h2>Komendy słowne</h2>
+    <p>
+      Rozpoznawanie mowy i synteza głosu pozwalają na sterowanie i dialog z
+      systemem bez użycia rąk – przykłady: Siri, Alexa, Asystent Google.
+    </p>
+  </section>
+
+  <!-- Slajd 9: Interfejsy gestów -->
+  <section
+    data-notes="Kamery śledzą ruch ciała i dłoni, tłumacząc gesty na polecenia. Przykłady to Microsoft Kinect czy Leap Motion – zastosowania od gier po kontrolę prezentacji bez dotyku."
+  >
+    <h2>Sterowanie ruchem</h2>
+    <p>
+      Kamery śledzą ruch ciała i dłoni, tłumacząc gesty na polecenia. Przykłady
+      to Microsoft Kinect czy Leap Motion – zastosowania od gier po kontrolę
+      prezentacji bez dotyku.
+    </p>
+  </section>
+
+  <!-- Slajd 10: Virtual Reality (VR) -->
+  <section
+    data-notes="VR tworzy całkowicie cyfrowe środowisko immersyjne za pomocą gogli i kontrolerów ruchu, stosowane w grach, szkoleniach symulacyjnych i wizualizacjach architektonicznych."
+  >
+    <h2>Wirtualna rzeczywistość</h2>
+    <p>
+      VR tworzy całkowicie cyfrowe środowisko immersyjne za pomocą gogli i
+      kontrolerów ruchu, stosowane w grach, szkoleniach symulacyjnych i
+      wizualizacjach architektonicznych.
+    </p>
+  </section>
+
+  <!-- Slajd 11: Augmented Reality (AR) -->
+  <section
+    data-notes="AR nakłada warstwy informacji na obraz rzeczywisty – od filtrów w Snapchat po instrukcje montażu w smartfonie czy okulary HoloLens."
+  >
+    <h2>Rozszerzona rzeczywistość</h2>
+    <p>
+      AR nakłada warstwy informacji na obraz rzeczywisty – od filtrów w Snapchat
+      po instrukcje montażu w smartfonie czy okulary HoloLens.
+    </p>
+  </section>
+
+  <!-- Slajd 12: Mixed Reality (MR) -->
+  <section
+    data-notes="MR integruje obiekty wirtualne z otoczeniem fizycznym, wykorzystując czujniki ToF i mapowanie 3D, co pozwala na stałą obecność i interakcję w obu światach jednocześnie."
+  >
+    <h2>Mieszana rzeczywistość</h2>
+    <p>
+      MR integruje obiekty wirtualne z otoczeniem fizycznym, wykorzystując
+      czujniki ToF i mapowanie 3D, co pozwala na stałą obecność i interakcję w
+      obu światach jednocześnie.
+    </p>
+  </section>
+
+  <!-- Slajd 13: Interfejsy wielomodalne -->
+  <section
+    data-notes="Wielomodalność łączy dotyk, głos, gesty i inne źródła danych wejściowych, co zwiększa naturalność i precyzję sterowania, przykładowo w zaawansowanych systemach konferencyjnych lub asystentach cyfrowych."
+  >
+    <h2>Połączenie modalności</h2>
+    <p>
+      Wielomodalność łączy dotyk, głos, gesty i inne źródła danych wejściowych,
+      co zwiększa naturalność i precyzję sterowania, przykładowo w
+      zaawansowanych systemach konferencyjnych lub asystentach cyfrowych.
+    </p>
+  </section>
+
+  <!-- Slajd 14: Brain–Computer Interfaces (BCI) -->
+  <section
+    data-notes="BCI odczytują sygnały EEG lub ECoG, konwertując intencje użytkownika na komendy komputerowe – obiecujące narzędzie dla osób z niepełnosprawnościami oraz nowych form sterowania myślami."
+  >
+    <h2>Interfejsy mózg–komputer</h2>
+    <p>
+      BCI odczytują sygnały EEG lub ECoG, konwertując intencje użytkownika na
+      komendy komputerowe – obiecujące narzędzie dla osób z
+      niepełnosprawnościami oraz nowych form sterowania myślami.
+    </p>
+  </section>
+
+  <!-- Slajd 15: Technologie sensorów -->
+  <section
+    data-notes="Kluczowe sensory to kamery, mikrofony, akcelerometry, żyroskopy, ToF, a także sensory biologiczne (tętno, EEG). Dzięki miniaturyzacji i niskim kosztom są wszechobecne w urządzeniach mobilnych i IoT."
+  >
+    <h2>Czujniki w interakcjach</h2>
+    <p>
+      Kluczowe sensory to kamery, mikrofony, akcelerometry, żyroskopy, ToF, a
+      także sensory biologiczne (tętno, EEG). Dzięki miniaturyzacji i niskim
+      kosztom są wszechobecne w urządzeniach mobilnych i IoT.
+    </p>
+  </section>
+
+  <!-- Slajd 16: Silniki i oprogramowanie -->
+  <section
+    data-notes="Środowiska interaktywne często buduje się na silnikach Unity, Unreal Engine czy WebGL. Rozpoznawanie mowy/obrazu i AI (ML/DL) analizują dane w czasie rzeczywistym, dostosowując interakcję do użytkownika."
+  >
+    <h2>Platformy i algorytmy</h2>
+    <p>
+      Środowiska interaktywne często buduje się na silnikach Unity, Unreal
+      Engine czy WebGL. Rozpoznawanie mowy/obrazu i AI (ML/DL) analizują dane w
+      czasie rzeczywistym, dostosowując interakcję do użytkownika.
+    </p>
+  </section>
+
+  <!-- Slajd 17: Architektura systemów -->
+  <section
+    data-notes="Współczesne systemy wykorzystują streaming danych, edge computing i chmurę do synchronizacji stanów użytkownika pomiędzy wieloma urządzeniami, zapewniając spójne środowisko interaktywne."
+  >
+    <h2>Strumienie danych i chmura</h2>
+    <p>
+      Współczesne systemy wykorzystują streaming danych, edge computing i chmurę
+      do synchronizacji stanów użytkownika pomiędzy wieloma urządzeniami,
+      zapewniając spójne środowisko interaktywne.
+    </p>
+  </section>
+
+  <!-- Slajd 18: Ergonomia -->
+  <section
+    data-notes="Projektowanie musi uwzględniać masę sprzętu (gogle, kontrolery), kąt widzenia i łatwość obsługi, by uniknąć zmęczenia mięśni, bólu karku czy oczu przy długotrwałej pracy."
+  >
+    <h2>Fizyczny komfort</h2>
+    <p>
+      Projektowanie musi uwzględniać masę sprzętu (gogle, kontrolery), kąt
+      widzenia i łatwość obsługi, by uniknąć zmęczenia mięśni, bólu karku czy
+      oczu przy długotrwałej pracy.
+    </p>
+  </section>
+
+  <!-- Slajd 19: Użyteczność -->
+  <section
+    data-notes="Interfejsy powinny być proste i przewidywalne. Testy z użytkownikami (cognitive walkthrough, usability testing) pomagają wykryć błędy na etapie prototypów."
+  >
+    <h2>Intuicyjność i spójność</h2>
+    <p>
+      Interfejsy powinny być proste i przewidywalne. Testy z użytkownikami
+      (cognitive walkthrough, usability testing) pomagają wykryć błędy na etapie
+      prototypów.
+    </p>
+  </section>
+
+  <!-- Slajd 20: Dostępność -->
+  <section
+    data-notes="Uwzględniamy potrzeby osób z niepełnosprawnościami: napisy, alternatywne sterowanie, kontrast, skalowanie czcionek zgodnie z wytycznymi WCAG."
+  >
+    <h2>Dla wszystkich użytkowników</h2>
+    <p>
+      Uwzględniamy potrzeby osób z niepełnosprawnościami: napisy, alternatywne
+      sterowanie, kontrast, skalowanie czcionek zgodnie z wytycznymi WCAG.
+    </p>
+  </section>
+
+  <!-- Slajd 21: Prywatność i bezpieczeństwo -->
+  <section
+    data-notes="Interakcje generują dane biometryczne i gramatyczne. Konieczne są mechanizmy anonimizacji, szyfrowanie i jasne polityki prywatności dla użytkowników."
+  >
+    <h2>Ochrona danych użytkownika</h2>
+    <p>
+      Interakcje generują dane biometryczne i gramatyczne. Konieczne są
+      mechanizmy anonimizacji, szyfrowanie i jasne polityki prywatności dla
+      użytkowników.
+    </p>
+  </section>
+
+  <!-- Slajd 22: Zastosowania edukacyjne -->
+  <section
+    data-notes="Wirtualne laboratoria i modele 3D w AR wspierają zrozumienie trudnych konceptów, zwiększają motywację uczniów i redukują zagrożenia związane z eksperymentami."
+  >
+    <h2>Nauka w VR/AR</h2>
+    <p>
+      Wirtualne laboratoria i modele 3D w AR wspierają zrozumienie trudnych
+      konceptów, zwiększają motywację uczniów i redukują zagrożenia związane z
+      eksperymentami.
+    </p>
+  </section>
+
+  <!-- Slajd 23: Zastosowania medyczne i symulatory -->
+  <section
+    data-notes="Symulatory VR trenują pilotów i chirurgów w realistycznych warunkach. AR wspiera rehabilitację, dostarczając instrukcji wizualnych i haptycznych w czasie rzeczywistym."
+  >
+    <h2>Szkolenia i rehabilitacja</h2>
+    <p>
+      Symulatory VR trenują pilotów i chirurgów w realistycznych warunkach. AR
+      wspiera rehabilitację, dostarczając instrukcji wizualnych i haptycznych w
+      czasie rzeczywistym.
+    </p>
+  </section>
+
+  <!-- Slajd 24: Zastosowania przemysł i IoT -->
+  <section
+    data-notes="Interaktywne pulpity operatorskie i aplikacje AR w serwisie maszyn pozwalają na zdalne wsparcie i diagnostykę. IoT reaguje na obecność pracowników, optymalizując procesy produkcyjne."
+  >
+    <h2>Przemysł 4.0</h2>
+    <p>
+      Interaktywne pulpity operatorskie i aplikacje AR w serwisie maszyn
+      pozwalają na zdalne wsparcie i diagnostykę. IoT reaguje na obecność
+      pracowników, optymalizując procesy produkcyjne.
+    </p>
+  </section>
+
+  <!-- Slajd 25: Przyszłość – AI i adaptacyjne interfejsy -->
+  <section
+    data-notes="AI pozwala na dynamiczne dostosowywanie układu i treści interfejsu do zachowań użytkownika, a modele generatywne mogą prowadzić kontekstowy dialog w multimodalnych środowiskach."
+  >
+    <h2>Sztuczna inteligencja</h2>
+    <p>
+      AI pozwala na dynamiczne dostosowywanie układu i treści interfejsu do
+      zachowań użytkownika, a modele generatywne mogą prowadzić kontekstowy
+      dialog w multimodalnych środowiskach.
+    </p>
+  </section>
+
+  <!-- Slajd 26: Przyszłość – XR, BCI i wnioski -->
+  <section
+    data-notes="XR i metaverse rozszerzą skalę immersji, a BCI wprowadzą sterowanie myślami. Łączność 5G i edge computing zredukują opóźnienia, otwierając nowe możliwości dla środowisk interaktywnych."
+  >
+    <h2>Nowe horyzonty</h2>
+    <p>
+      XR i metaverse rozszerzą skalę immersji, a BCI wprowadzą sterowanie
+      myślami. Łączność 5G i edge computing zredukują opóźnienia, otwierając
+      nowe możliwości dla środowisk interaktywnych.
+    </p>
   </section>
 </template>
 

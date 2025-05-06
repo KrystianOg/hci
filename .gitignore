@@ -1,2 +1,4 @@
 .cursor
 SCRIPT.md
+.vscode
+!.vscode/recommended.json

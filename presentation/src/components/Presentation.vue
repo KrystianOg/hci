@@ -46,12 +46,14 @@ import { bibliography } from "./bibliography/content";
     data-notes="Główne cechy to: szybkość reakcji (low latency), adaptacyjność do kontekstu użytkownika, multimodalność wejścia/wyjścia oraz sprzężenie zwrotne - wizualne, dźwiękowe, haptyczne czy nawet neuronalne."
   >
     <h2>Charakterystyka</h2>
-    <h3>Główne cechy to:</h3> 
+    <h3>Główne cechy to:</h3>
     <ul>
       <li>szybkość reakcji</li>
       <li>adaptacyjność do kontekstu użytkownika</li>
-      <li>multimodalność wejścia/wyjścia</li> 
-      <li>sprzężenie zwrotne - wizualne, dźwiękowe, haptyczne czy nawet neuronalne</li>
+      <li>multimodalność wejścia/wyjścia</li>
+      <li>
+        sprzężenie zwrotne - wizualne, dźwiękowe, haptyczne czy nawet neuronalne
+      </li>
     </ul>
   </section>
 
@@ -88,12 +90,14 @@ import { bibliography } from "./bibliography/content";
     <h2>Od tekstu do immersji</h2>
     <ul>
       <li>Lata 40.-50.: Ogromne komputery i karty perforowane</li>
-      <li>Lata 60.: Douglas Engelbart zaprezentował pierwszą mysz komputerową</li>
-      <li>Lata 70.-80.: Era interfejsów tekstowych</li> 
+      <li>
+        Lata 60.: Douglas Engelbart zaprezentował pierwszą mysz komputerową
+      </li>
+      <li>Lata 70.-80.: Era interfejsów tekstowych</li>
       <li>Lata 80.-90.: Rozwój GUI, Macintosh, Microsoft</li>
       <li>Lata 90.-2000: Interaktywne środowiska webowe</li>
       <li>2007-obecnie: Era urządzeń mobilnych i aplikacji</li>
-      <li>2020-?: AR, VR, multimodalność, </li>
+      <li>2020-?: AR, VR, multimodalność,</li>
     </ul>
   </section>
 
@@ -174,7 +178,8 @@ import { bibliography } from "./bibliography/content";
     <p>
       MR integruje obiekty wirtualne z otoczeniem fizycznym, wykorzystując
       czujniki ToF i mapowanie 3D, co pozwala na stałą obecność i interakcję w
-      obu światach jednocześnie. Przykłady to Microsoft HoloLens lub Apple Vision Pro.
+      obu światach jednocześnie. Przykłady to Microsoft HoloLens lub Apple
+      Vision Pro.
     </p>
   </section>
 
@@ -370,49 +375,49 @@ import { bibliography } from "./bibliography/content";
 
 <style scoped>
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 section {
-    padding: 40px 20px;
-    margin-bottom: 30px;
-    background-color: rgb(234, 235, 230);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  background-color: rgb(234, 235, 230);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Style for headings */
 h1,
-h2,
-h3 {
-  color: #000;
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 p {
-    line-height: 1.6;
-    font-size: 18px;
-    margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 ul {
-    margin-left: 20px;
-    font-size: 16px;
+  margin-left: 20px;
+  font-size: 16px;
 }
 
 a {
-    color: #3498db;
-    text-decoration: none;
+  color: #3498db;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 </style>

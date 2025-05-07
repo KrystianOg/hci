@@ -1,5 +1,6 @@
 <script setup lang="ts">
-// Import any necessary components here
+import BibliographyItem from "../components/bibliography/Item.vue";
+import { bibliography } from "./bibliography/content";
 </script>
 
 <template>
@@ -311,6 +312,28 @@
       myślami. Łączność 5G i edge computing zredukują opóźnienia, otwierając
       nowe możliwości dla środowisk interaktywnych.
     </p>
+  </section>
+  <section>
+    <section class="bibliography">
+      <h2 class="bibliography__title">Bibliografia</h2>
+      <ul class="bibliography__list">
+        <BibliographyItem
+          v-for="(entry, id) in bibliography.slice(0, 7)"
+          :key="entry.title ?? id.toString()"
+          :entry="entry"
+        />
+      </ul>
+    </section>
+    <section class="bibliography">
+      <h2 class="bibliography__title">Bibliografia</h2>
+      <ul class="bibliography__list">
+        <BibliographyItem
+          v-for="(entry, id) in bibliography.slice(8, 15)"
+          :key="entry.title ?? id.toString()"
+          :entry="entry"
+        />
+      </ul>
+    </section>
   </section>
 </template>
 
